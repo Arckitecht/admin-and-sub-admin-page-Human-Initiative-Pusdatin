@@ -190,7 +190,7 @@ if (isset($_POST["regist"]))
                                     </div>
                                     <div class='col-lg-6'>
                                         <a for="inputNoTelp" style='font-weight: lighter'>No Telepon<a
-                                            style="color: red; font-weight: lighter">*</a><a style='font-weight: lighter'> (Whatsapp)</a>
+                                            style="color: red; font-weight: lighter">*</a><a style='font-weight: lighter'> (Whatsapp)</a></a>
                                         <input type="tel" minlength="10" maxlength="13" class="form-control"
                                             id="inputNoTelp" name="inputNoTelp" value="<?php if (isset($Telp))
                                             echo $Telp ?>" placeholder="Contoh : 081234567891"
