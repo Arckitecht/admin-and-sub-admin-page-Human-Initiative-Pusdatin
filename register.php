@@ -154,7 +154,8 @@ if (isset($_POST["regist"]))
                         <form method="POST" enctype="multipart/form-data">
                             <div class='row'>
                                 <div class='col-lg-6'>
-                                    <a for="inputNamaMember" style='font-weight: lighter'>Nama</a>
+                                    <a for="inputNamaMember" style='font-weight: lighter'>Nama<a
+                                            style="color: red; font-weight: lighter">*</a></a>
                                     <input type="text" class="form-control" id="inputNamaMember" name="inputNamaMember"
                                         value="<?php if (isset($NamaMember))
                                             echo $NamaMember ?>" style='font-weight: lighter'>
@@ -164,7 +165,8 @@ if (isset($_POST["regist"]))
                                     </div>
                                 </div>
                                 <div class='col-lg-6'>
-                                    <a for="username" style='font-weight: lighter'>Username</a>
+                                    <a for="username" style='font-weight: lighter'>Username<a
+                                            style="color: red; font-weight: lighter">*</a></a>
                                     <input type="text" class="form-control" id="inputUsername" name="inputUsername"
                                         value="<?php if (isset($Username))
                                             echo $Username ?>" style='font-weight: lighter'>
@@ -176,7 +178,8 @@ if (isset($_POST["regist"]))
                             </div>
                             <div class='row'>
                                 <div class='col-lg-6'>
-                                    <a for="inputEmailMember" style='font-weight: lighter'>Email</a>
+                                    <a for="inputEmailMember" style='font-weight: lighter'>Email<a
+                                            style="color: red; font-weight: lighter">*</a></a>
                                     <input type="email" class="form-control" id="inputEmailMember"
                                         name="inputEmailMember" value="<?php if (isset($EmailMember))
                                             echo $EmailMember ?>" style='font-weight: lighter'>
@@ -186,16 +189,20 @@ if (isset($_POST["regist"]))
                                         </div>
                                     </div>
                                     <div class='col-lg-6'>
-                                        <a for="inputNoTelp" style='font-weight: lighter'>No Telepon (Whatsapp)</a>
-                                        <input type="tel" minlength="10" maxlength="13" class="form-control" id="inputNoTelp" name="inputNoTelp" value="<?php if (isset($Telp))
-                                            echo $Telp ?>" placeholder="Contoh : 081234567891" style='font-weight: lighter'>
+                                        <a for="inputNoTelp" style='font-weight: lighter'>No Telepon<a
+                                            style="color: red; font-weight: lighter">*</a><a style='font-weight: lighter'> (Whatsapp)</a>
+                                        <input type="tel" minlength="10" maxlength="13" class="form-control"
+                                            id="inputNoTelp" name="inputNoTelp" value="<?php if (isset($Telp))
+                                            echo $Telp ?>" placeholder="Contoh : 081234567891"
+                                            style='font-weight: lighter'>
                                         <div class="error" style="color:red; font-size: 12px;">
                                         <?php if (isset($error_Telp))
                                             echo $error_Telp ?>
                                         </div>
                                     </div>
                                 </div>
-                                <a for="inputPassword" style='font-weight: lighter'>Password</a>
+                                <a for="inputPassword" style='font-weight: lighter'>Password<a
+                                            style="color: red; font-weight: lighter">*</a></a>
                                 <input type="password" class="form-control" id="inputPassword" name="inputPassword" value="<?php if (isset($Password))
                                             echo $Password ?>" style='font-weight: lighter'>
                                 <div class="error" style="color:red; font-size: 12px;">
