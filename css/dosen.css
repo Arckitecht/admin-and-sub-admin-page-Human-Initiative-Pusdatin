@@ -1,0 +1,35 @@
+.profil-dosen{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 10px 0px 0px 60px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.profil-dosen img{
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    border: 1px solid black;
+    display: inline;
+}
+
+.nama-profil-dosen ul li{
+    padding:10px;
+    margin: 10px 10px 0px 10px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.caption a{
+    text-decoration: none;
+    padding: 3px;
+    margin-top: 10px;
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans';
+    color: blue;
+    cursor: pointer;
+}

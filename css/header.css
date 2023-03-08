@@ -1,0 +1,11 @@
+.iconDetails {
+    margin-left:2%;
+   float:left; 
+   height:100px;
+   width:100px;
+   border-radius: 50%;	
+   } 
+
+td{
+    vertical-align: center;
+}

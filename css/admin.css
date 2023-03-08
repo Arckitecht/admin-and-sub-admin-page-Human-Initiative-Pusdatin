@@ -1,0 +1,45 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tabel-mahasiswa table{
+    border: 2px solid black;
+}
+
+.cell-border{
+    color: black;
+}
+
+.profil-admin{
+    width: 250px;
+    height: 200px;
+    margin: 10px 0px 10px 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profil-admin img{
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: inline;
+}
+
+.nama-profil-admin ul li{
+    padding:10px;
+    margin: 10px 10px 10px 10px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box-status-mahasiswa { 
+    display:flex;   
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid black;
+    margin: 10px 5px 10px 5px;
+}
