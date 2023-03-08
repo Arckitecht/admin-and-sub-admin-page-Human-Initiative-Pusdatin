@@ -51,7 +51,7 @@ if (isset($_SESSION['username'])):
             $error_notelp = "*No Telepon hanya dapat berupa angka!<br>";
             $valid        = FALSE;
         }
-        elseif (strlen($notelp) >= 13 or strlen($notelp) <= 10)
+        elseif (strlen($notelp) > 13 or strlen($notelp) < 10)
         {
             $error_notelp = "*No Telepon maksimal 13 digit dan minimal 10 digit!<br>";
             $valid        = FALSE;
@@ -445,8 +445,8 @@ if (isset($_SESSION['username'])):
                                                     <label for="inputnotelp" class="col-sm-2 col-form-label"><b>No. Telp</b><b
                                                             style="color: red"> *</b></label>
                                                     <div class="col-sm-10">
-                                                        <input type="text" class="form-control" id="inputnotelp"
-                                                            name="inputnotelp" value="<?php if (isset($notelp))
+                                                        <input type="tel" minlength="10" maxlength="13" class="form-control"
+                                                            id="inputnotelp" name="inputnotelp" value="<?php if (isset($notelp))
                                                             echo $notelp ?>">
                                                         <div class="error" style="color:red; font-size: 12px;">
                                                         <?php if (isset($error_notelp))

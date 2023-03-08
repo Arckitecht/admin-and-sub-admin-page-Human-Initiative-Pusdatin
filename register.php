@@ -76,7 +76,7 @@ if (isset($_POST["regist"]))
         $error_Telp = "*No Telepon hanya dapat berupa angka!<br>";
         $valid      = FALSE;
     }
-    elseif (strlen($Telp) >= 13 or strlen($Telp) <= 10)
+    elseif (strlen($Telp) > 13 or strlen($Telp) < 10)
     {
         $error_Telp = "*No Telepon maksimal 13 digit dan minimal 10 digit!<br>";
         $valid      = FALSE;
@@ -187,8 +187,8 @@ if (isset($_POST["regist"]))
                                     </div>
                                     <div class='col-lg-6'>
                                         <a for="inputNoTelp" style='font-weight: lighter'>No Telepon (Whatsapp)</a>
-                                        <input type="text" class="form-control" id="inputNoTelp" name="inputNoTelp" value="<?php if (isset($Telp))
-                                            echo $Telp ?>"placeholder="Contoh : 08xxxxxxxxxx" style='font-weight: lighter'>
+                                        <input type="tel" minlength="10" maxlength="13" class="form-control" id="inputNoTelp" name="inputNoTelp" value="<?php if (isset($Telp))
+                                            echo $Telp ?>" placeholder="Contoh : 081234567891" style='font-weight: lighter'>
                                         <div class="error" style="color:red; font-size: 12px;">
                                         <?php if (isset($error_Telp))
                                             echo $error_Telp ?>
