@@ -165,7 +165,7 @@ if (isset($_POST["regist"]))
                                     </div>
                                 </div>
                                 <div class='col-lg-6'>
-                                    <a for="username" style='font-weight: lighter'>Username<a
+                                    <a for="username" style='font-weight: lighter'>NAMANAMANAMA<a
                                             style="color: red; font-weight: lighter">*</a></a>
                                     <input type="text" class="form-control" id="inputUsername" name="inputUsername"
                                         value="<?php if (isset($Username))
