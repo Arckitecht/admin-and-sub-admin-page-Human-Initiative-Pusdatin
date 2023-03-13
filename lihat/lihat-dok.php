@@ -26,9 +26,10 @@ if (isset($_SESSION['username'])):
                         <b style="color: white">Data Dokumen</b>
                     </div>
                     <div class="card-body tabel-mahasiswa cell-border">
-                        <a type="submit" class="btn btn-success" href="../input/tamb-dok.php" title='Tambah Dokumen Baru'><b>+ Baru</b></a>
-                        <button onclick='window.location.reload(true);' class="btn btn-danger" style="float: right" title='Refresh'><b><i
-                                    class="bi bi-arrow-clockwise"></i></b></button>
+                        <a type="submit" class="btn btn-success" href="../input/tamb-dok.php"
+                            title='Tambah Dokumen Baru'><b>+ Baru</b></a>
+                        <button onclick='window.location.reload(true);' class="btn btn-danger" style="float: right"
+                            title='Refresh'><b><i class="bi bi-arrow-clockwise"></i></b></button>
                         <br><br>
                         <table id="admin-tabel-mahasiswa" class="cell-border table-sm dataTable" cellspacing="1"
                             width="100%"
@@ -108,7 +109,7 @@ if (isset($_SESSION['username'])):
                                     echo "<tr>
                                     <td style='background-color: #f5f5f5; width: 30px;'><b>" . $row->BookID . "</b></td>
                                     <td id='display-image' style='outline: 1px solid #CCC; overflow:auto;'>
-                                        <a href='../assets/pdf/" . $row->PDF . "' target='_new' title='Klik untuk Download' download='" . $row->PDF . "'>
+                                        <a href='../assets/pdf/" . $row->PDF . "' target='_new' title='Klik untuk Download PDF' download='" . $row->PDF . "'>
                                             <img src='../assets/imageinput/" . $row->Gambar . "' style='width:76px; height:100px;'>
                                         </a>
                                     </td>
